@@ -1,0 +1,126 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_accel-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_qtest_qtest.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_stubs_kvm-stub.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_stubs_xen-stub.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_cpu-exec.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_cputlb.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_plugin-gen.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_tb-maint.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_tcg-accel-ops-icount.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_tcg-accel-ops-mttcg.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_tcg-accel-ops-rr.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_tcg-accel-ops.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_tcg-all.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_tcg-runtime-gvec.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_tcg-runtime.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_translate-all.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_translator.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/accel_tcg_watchpoint.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/cpu-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/dump_win_dump.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/fpu_softfloat.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_9pfs_virtio-9p-device.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_block_virtio-blk-common.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_block_virtio-blk.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_char_virtio-serial-bus.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_hyperv_hv-balloon-stub.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_i386_kvm_xen-stubs.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_net_virtio-net.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_scsi_virtio-scsi.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-9p-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-balloon-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-balloon.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-blk-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-config-io.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-crypto-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-input-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-iommu-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-net-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-qmp.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-rng-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-rng.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-scsi-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio-serial-pci.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_virtio_virtio.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_esp32.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_esp32_intc.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_esp32s3.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_esp32s3_clk.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_esp32s3_intc.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_mx_pic.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_pic_cpu.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_sim.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_virt.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_xtensa_memory.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/hw_xtensa_xtfpga.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-commands-machine-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-commands-misc-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-commands.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-emit-events.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-events-machine-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-events-misc-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-events.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-init-commands.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-introspect.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-types-machine-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-types-misc-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-types.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-visit-machine-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-visit-misc-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/meson-generated_.._qapi_qapi-visit.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/migration_ram.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/migration_target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/monitor_hmp-cmds-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/monitor_hmp-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/page-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/page-vary-target.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/plugins_api.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/plugins_core.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/plugins_loader.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/semihosting_config.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/semihosting_console.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/semihosting_guestfd.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/semihosting_syscalls.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/semihosting_uaccess.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/system_arch_init.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/system_ioport.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/system_memory.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/system_physmem.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/system_watchpoint.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-dc232b.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-dc233c.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-de212.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-de233_fpu.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-dsp3400.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-esp32.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-esp32s3.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-fsf.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-lx106.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-sample_controller.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-test_kc705_be.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_core-test_mmuhifi_c3.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_cpu.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_dbg_helper.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_exc_helper.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_fpu_helper.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_gdbstub.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_helper.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_mmu_helper.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_monitor.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_op_helper.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_translate.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_translate_tie_esp32s3.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_win_helper.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_xtensa-isa.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/target_xtensa_xtensa-semi.c.o \
+../Emulator/qemu/build/libqemu-xtensa-softmmu.a.p/trace_control-target.c.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+

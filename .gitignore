@@ -1,0 +1,41 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/digital-twin-dashboard/node_modules
+/digital-twin-dashboard/.pnp
+/digital-twin-dashboard/.pnp.*
+/digital-twin-dashboard/.yarn/*
+/digital-twin-dashboard/.yarn/patches
+/digital-twin-dashboard/.yarn/plugins
+/digital-twin-dashboard/.yarn/releases
+/digital-twin-dashboard/.yarn/versions
+
+# testing
+/digital-twin-dashboard/coverage
+
+# next.js
+/digital-twin-dashboard/.next/
+/digital-twin-dashboard/out/
+
+# production
+/digital-twin-dashboard/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+/digital-twin-dashboard/npm-debug.log*
+/digital-twin-dashboard/yarn-debug.log*
+/digital-twin-dashboard/yarn-error.log*
+/digital-twin-dashboard/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+/digital-twin-dashboard/.env*
+
+# vercel
+/digital-twin-dashboard/.vercel
+
+# typescript
+/digital-twin-dashboard/*.tsbuildinfo
+/digital-twin-dashboard/next-env.d.ts
