@@ -7,17 +7,14 @@
 
 // === CONFIGURATION ===
 #define FIREBASE_STREAM_PATH "/SmartHomeSystem"
-//OLD DB
-// #define API_KEY "AIzaSyCSXlteNSB39rz1A_PvvQ8dMmlIKzz3bx0"
-
-#define API_KEY "AIzaSyAvaj6zYgoNpJ_IVJ4IeaSOnbOuTyw54NY"
+#define API_KEY "API_KEY_FOR_FIREBASE_RTDB"
 #define DATABASE_URL "https://smarthubsystem-394c6-default-rtdb.firebaseio.com"
 //OLD DB
 // #define DATABASE_URL "https://smart-fire-system-684fb-default-rtdb.firebaseio.com"
-#define USER_EMAIL "test@device.com"
-#define USER_PASSWORD "123456"
-#define WIFI_SSID "iPhone (41)"
-#define WIFI_PASSWORD "stuff@786"
+#define USER_EMAIL "FIREBASE_USER_EMAIL"
+#define USER_PASSWORD "FIREBASE_USER_PASSWORD"
+#define WIFI_SSID "WIFI_SSID"
+#define WIFI_PASSWORD "WIFI_PASSWORD"
 #define LOG_SERVER_URL "http://192.168.0.13:3000/log"
 
 enum FirebaseValueType { TYPE_STRING, TYPE_INT, TYPE_FLOAT, TYPE_BOOL };

@@ -1,0 +1,24 @@
+# Intellij Idea #
+#.idea
+*.iml
+*.ipr
+*.iws
+
+# Intellij #
+/out/*
+/target/*
+
+/nbproject/private/
+/javadoc/
+
+# Eclipse files #
+/iot-sc-template-library/bin/*
+/iot-sc-template-library/src-gen/*
+
+# General #
+!.gitkeep
+input.txt
+ReportFile.txt
+
+/src/main/resources/*.json
+/backup/
