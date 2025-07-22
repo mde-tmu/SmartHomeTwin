@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.iotfirebase.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_FireAlarmFragment"
+            app:destination="@id/FireAlarmFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SmartLightFragment"
+            app:destination="@id/SmartLightFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SmartMicrowaveFragment"
+            app:destination="@id/SmartMicrowaveFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SmartTVFragment"
+            app:destination="@id/SmartTVFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FireAlarmFragment"
+        android:name="com.example.iotfirebase.FireAlarmFragment"
+        android:label="@string/fire_alarm_fragment_label"
+        tools:layout="@layout/fragment_fire_alarm">
+
+        <action
+            android:id="@+id/action_FireAlarmFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.iotfirebase.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SmartLightFragment"
+        android:name="com.example.iotfirebase.SmartLightFragment"
+        android:label="@string/smart_light_fragment_label"
+        tools:layout="@layout/fragment_smart_light">
+
+        <action
+            android:id="@+id/action_SmartLightFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SmartMicrowaveFragment"
+        android:name="com.example.iotfirebase.SmartMicrowaveFragment"
+        android:label="@string/smart_mw_fragment_label"
+        tools:layout="@layout/fragment_smart_microwave">
+
+        <action
+            android:id="@+id/action_SmartMicrowaveFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SmartTVFragment"
+        android:name="com.example.iotfirebase.SmartTVFragment"
+        android:label="@string/smart_tv_fragment_label"
+        tools:layout="@layout/fragment_smart_t_v">
+
+        <action
+            android:id="@+id/action_SmartTVFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "70054481004",
+    "project_id": "smarthubsystem",
+    "storage_bucket": "smarthubsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70054481004:android:1b17a009569c68c0029c49",
+        "android_client_info": {
+          "package_name": "com.example.iotfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIWZhbd6OXhwS90gCHy3FAYO0Pgnllpfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
