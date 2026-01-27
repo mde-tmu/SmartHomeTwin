@@ -1,0 +1,48 @@
+name: ESP32 OTA Upload
+
+# Trigger only on pushes to master branch when files in generatedFiles/ are modified
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'generatedFiles/**'
+
+jobs:
+  ota-upload:
+    # IMPORTANT: This workflow requires a self-hosted runner
+    # Setup instructions:
+    # 1. Set up a self-hosted runner on a machine in the same network as the ESP32
+    # 2. Ensure the runner has Python 3 installed
+    # 3. Ensure the ESP32 Arduino core is installed (for espota.py)
+    # 4. Update the build step below with actual build commands
+    runs-on: self-hosted
+
+    # Limit GITHUB_TOKEN permissions to read-only access
+    permissions:
+      contents: read
+
+    steps:
+      # Step 1: Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Build firmware (PLACEHOLDER)
+      # TODO: Add actual build commands here
+      # This step should compile the firmware and generate the Release/Arduino_Setup.bin file
+      # Example commands might include:
+      #   - Installing dependencies (arduino-cli, required libraries)
+      #   - Compiling the Arduino sketch
+      #   - Generating the .bin file in the Release/ directory
+      - name: Build firmware
+        run: |
+          echo "⚠️  Build step is a placeholder - needs to be implemented"
+          echo "TODO: Add commands to build the firmware and generate Release/Arduino_Setup.bin"
+          # Add your build commands here, for example:
+          # arduino-cli compile --fqbn esp32:esp32:esp32 --output-dir Release --export-binaries
+          
+      # Step 3: Make the OTA upload script executable and run it
+      - name: Run OTA upload script
+        run: |
+          chmod +x scripts/ota_upload.sh
+          ./scripts/ota_upload.sh
