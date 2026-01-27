@@ -18,6 +18,10 @@ jobs:
     # 4. Update the build step below with actual build commands
     runs-on: self-hosted
 
+    # Limit GITHUB_TOKEN permissions to read-only access
+    permissions:
+      contents: read
+
     steps:
       # Step 1: Checkout the repository code
       - name: Checkout code
