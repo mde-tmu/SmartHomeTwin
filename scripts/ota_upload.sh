@@ -9,7 +9,11 @@ ESP_PORT=3232                            # OTA port
 ESP_PASS=""                              # Optional OTA password
 
 # === espota.py location ===
-ESPOTA_PY=$(find ~/Library/Arduino15/packages/esp32/hardware/esp32/3.2.0/tools/espota.py | head -n 1)
+# Try to find espota.py in common locations (macOS, Linux, Windows)
+ESPOTA_PY=$(find ~/Library/Arduino15/packages/esp32/hardware/esp32/*/tools/espota.py 2>/dev/null | head -n 1)
+if [ -z "$ESPOTA_PY" ]; then
+    ESPOTA_PY=$(find ~/.arduino15/packages/esp32/hardware/esp32/*/tools/espota.py 2>/dev/null | head -n 1)
+fi
 
 # === CHECKS ===
 
@@ -31,12 +35,12 @@ fi
 
 echo "📡 Uploading $BIN_FILE_NAME to $ESP_IP via OTA..."
 
-UPLOAD_CMD="python3 \"$ESPOTA_PY\" -i \"$ESP_IP\" -p \"$ESP_PORT\" -f \"$BIN_FILE_PATH\""
+# Build command array to avoid eval security issues
 if [ -n "$ESP_PASS" ]; then
-    UPLOAD_CMD+=" -a \"$ESP_PASS\""
+    python3 "$ESPOTA_PY" -i "$ESP_IP" -p "$ESP_PORT" -f "$BIN_FILE_PATH" -a "$ESP_PASS"
+else
+    python3 "$ESPOTA_PY" -i "$ESP_IP" -p "$ESP_PORT" -f "$BIN_FILE_PATH"
 fi
-
-eval $UPLOAD_CMD
 
 if [ $? -eq 0 ]; then
     echo "✅ OTA Upload successful!"
